@@ -1,0 +1,187 @@
+@font-face {
+    font-family: ProximaNovaBlack;
+    src: url(../Font/proxima_ssv/Proxima-Nova-Black.otf);
+}
+
+@font-face {
+    font-family: ProximaNovaBold;
+    src: url(../Font/proxima_ssv/Proxima-Nova-Bold.otf);
+}
+
+@font-face {
+    font-family: ProximaNovaBlack;
+    src: url(../Font/proxima_ssv/Proxima-Nova-Black.otf);
+}
+
+@font-face {
+    font-family: ProximaNovaExtraBold;
+    src: url(../Font/proxima_ssv/Proxima-Nova-Extrabold.otf);
+}
+
+@font-face {
+    font-family: ProximaNovaSemiBold;
+    src: url(../Font/proxima_ssv/Proxima-Nova-Semibold.otf);
+}
+
+@font-face {
+    font-family: Proxima;
+    src: url(../Font/proxima_ssv/ProximaNova-Regular.otf);
+}
+
+@font-face {
+    font-family: GilroyExtraBold;
+    src: url(../Font/Gilroy-FREE/Gilroy-FREE/Gilroy-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: GilroyBold;
+    src: url(../Font/Gilroy-FREE/Gilroy-FREE/Gilroy-Bold.ttf);
+}
+
+@font-face {
+    font-family: GilroySemiBold;
+    src: url(../Font/Gilroy-FREE/Gilroy-FREE/Gilroy-Semibold.ttf);
+}
+
+@font-face {
+    font-family: GilroyMedium;
+    src: url(../Font/Gilroy-FREE/Gilroy-FREE/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: GilroyLight;
+    src: url(../Font/Gilroy-FREE/Gilroy-FREE/Gilroy-Light.otf);
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#__next {
+    height: 100%;
+}
+
+.imgBglogo {
+    position: absolute;
+    top: -20px;
+    left: -65px;
+    width: 500px;
+}
+
+.liNav {
+    display: table-cell;
+    position: relative;
+}
+
+.nav-link {
+    font-family: "ProximaNovaSemiBold";
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #298125;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.p1 {
+    font-family: 'Playfair Display', serif;
+    color: #298125;
+    font-size: 3.5rem;
+    line-height: normal;
+}
+
+.p2 {
+    font-family: "Proxima";
+    color: #185515;
+    font-size: 1.1rem;
+    line-height: normal;
+}
+
+.btnLearn {
+    font-family: "ProximaNovaSemiBold";
+    margin-top: 20px;
+    color: white;
+    background-color: #298125;
+    padding: 10px;
+    width: 250px;
+    border: 0px;
+    border-radius: 25px;
+    box-shadow: 0 2px 12px -6px #298125 !important;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 1px;
+}
+
+.imgCon {
+    position: absolute;
+    left: 45%;
+    height: 70%;
+    top: 15%;
+    width: 65%;
+}
+
+.imgCapsule {
+    position: absolute;
+    left: 40%;
+    width: 300px;
+    top: 70%;
+    z-index: 9;
+}
+
+.imgCoconut {
+    position: absolute;
+    left: 68%;
+    width: 200px;
+    top: 85%;
+}
+
+.imgLeave {
+    position: absolute;
+    right: 0px;
+    width: 25%;
+    bottom: 0px;
+}
+
+.con2 {
+    padding-top: 70px;
+}
+
+.pCon2 {
+    font-family: 'Playfair Display', serif;
+    color: #298125;
+    font-size: 3rem;
+    text-align: center;
+    line-height: normal;
+}
+
+.pImage {
+    font-family: "ProximaNovaSemiBold";
+    color: #185515;
+    line-height: normal;
+    text-align: center;
+    margin-top: 25px;
+}
