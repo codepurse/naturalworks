@@ -2,13 +2,24 @@ import React, { Component, useState, useEffect, useRef } from "react";
 import Header from "../component/header";
 import Navbar from "../component/navbar";
 import Footer from "../component/footer";
+import Componentdidmount from "../component/componentdidmount";
 import Head from "next/head";
 
 function index() {
+  function goLearn() {
+    $("html, body").animate(
+      {
+        scrollTop: $("#con3").offset().top,
+      },
+      1000
+    );
+  }
+
   return (
     <>
       <Header></Header>
       <Navbar></Navbar>
+      <Componentdidmount></Componentdidmount>
       <div className="container-fluid h-100" style={{ position: "relative" }}>
         <img src="Image/conbg.png" className="imgCon"></img>
         <img src="Image/leaves.png" className="img-fluid imgLeave"></img>
@@ -35,7 +46,9 @@ function index() {
                   style={{ width: "50px" }}
                 ></img>
               </div>
-              <button className="btnLearn">LEARN MORE</button>
+              <button className="btnLearn" onClick={goLearn}>
+                LEARN MORE
+              </button>
             </div>
             <div className="col-lg-6" style={{ position: "relative" }}>
               <img src="Image/box.png" className="img-fluid"></img>
@@ -153,7 +166,7 @@ function index() {
           </div>
         </div>
       </div>
-      <div className="container-fluid" style={{ marginTop: "100px" }}>
+      <div className="container-fluid" id="con3" style={{ marginTop: "100px" }}>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -205,16 +218,16 @@ function index() {
                 className="img-fluid imgCon3"
               ></img>
               <input type="text" className="txtInfo" placeholder="name"></input>
-              <input type="text" className="txtInfo" placeholder="name"></input>
-              <textarea id="w3review" name="w3review" rows="6" cols="50">
-                message
+              <input type="text" className="txtInfo" placeholder="email"></input>
+              <textarea id="w3review" name="w3review" rows="6" cols="50" placeholder = "message">
+              
               </textarea>
               <button className="btnSubmit">SUBMIT</button>
             </div>
           </div>
         </div>
       </div>
-      <div className="container-fluid" style={{ marginTop: "240px" }}>
+      <div className="container-fluid" style={{ marginTop: "170px" }}>
         <Footer></Footer>
       </div>
     </>

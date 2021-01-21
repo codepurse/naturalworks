@@ -65,22 +65,31 @@ body, html {
     background-color: #FAF9F6;
 }
 
+.conNav, .navbar {
+    background-color: #FAF9F6 !important;
+}
+
 .imgBglogo {
     position: absolute;
     top: -20px;
     left: -65px;
     width: 500px;
+    z-index: 99999;
 }
 
-.liNav {
-    display: table-cell;
-    position: relative;
+.imglogo {
+    z-index: 9;
 }
 
 .nav-link {
     font-family: "ProximaNovaSemiBold";
     margin-left: 25px;
     cursor: pointer;
+}
+
+#activeNav {
+    text-shadow: 0px 0.5px, 0.5px 0px, 0.5px 0.5px;
+    font-weight: bolder;
 }
 
 .nav-link {
@@ -136,6 +145,7 @@ body, html {
     cursor: pointer;
     transition: all 0.2s;
     letter-spacing: 1px;
+    outline: none !important;
 }
 
 .imgCon {
@@ -246,13 +256,14 @@ body, html {
     border-radius: 8px;
     margin-bottom: 25px;
 }
+
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     #w3review {
-      -webkit-backdrop-filter: blur(10px);
-      backdrop-filter: blur(10px);
-      background-color: rgba(255, 255, 255, 0.5);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.5);
     }
-  }
+}
 
 .btnSubmit {
     font-family: "ProximaNovaSemiBold";
@@ -262,7 +273,7 @@ body, html {
     padding: 10px;
     width: 175px;
     border: 0px;
- float: right;
+    float: right;
     border-radius: 25px;
     box-shadow: 0 2px 12px -6px #298125 !important;
     cursor: pointer;
@@ -271,14 +282,14 @@ body, html {
 }
 
 .imgCon3left {
-    position:absolute;
+    position: absolute;
     bottom: -270px;
     width: 50%;
     left: -80px;
 }
 
 .imgCon3 {
-    position:absolute;
+    position: absolute;
     bottom: 0px;
     width: 55%;
     right: -100px;
@@ -287,4 +298,111 @@ body, html {
 .conFooter {
     background-color: #F5F3EF;
     padding: 40px 10px;
+}
+
+.ulFooter {
+    display: inline-block;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0 auto !important;
+    width: max-content;
+}
+
+.ulFooter li {
+    float: left;
+    width: max-content;
+}
+
+.ulFooter li a {
+    font-family: "ProximaNovaSemiBold";
+    display: block;
+    padding: 10px;
+    color: #185515;
+    cursor: pointer;
+    text-align: center;
+    width: max-content;
+}
+
+.txtSearchFooter {
+    font-family: "Raleway";
+    color: #298125;
+    background-color: white !important;
+    background: url('../Image/search.png') left center no-repeat;
+    border: 0px;
+    padding: 10px;
+    padding-left: 35px;
+    width: 100%;
+    box-shadow: 0 2px 12px -6px lightgray !important;
+    outline: #298125 !important;
+    border-radius: 25px;
+    background-size: 18px;
+    background-position: 10px;
+}
+
+.pPriceShop {
+    font-family: "Proxima";
+    color: #298125;
+    font-size: 1.8rem;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.btnCapsule {
+    font-family: "Proxima";
+    color: #298125;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: 1px solid #298125;
+    padding: 8px;
+    width: 170px;
+    text-align: center;
+    border-radius: 25px;
+    margin-right: 10px;
+    box-shadow: 0 2px 12px -6px #298125 !important;
+    cursor: pointer;
+    outline: none !important;
+    transition: all 0.2s
+}
+
+.btnaddCart {
+    font-family: "Proxima";
+    color: #298125;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: 1px solid #298125;
+    padding: 8px;
+    width: 170px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 25px;
+    margin-right: 10px;
+    outline: none !important;
+    box-shadow: 0 2px 12px -6px #298125 !important;
+    cursor: pointer;
+    transition: all 0.2s
+}
+
+.pShop {
+    font-family: "Proxima";
+    font-size: 0.9rem;
+    color: #298125;
+    font-weight: 600;
+}
+
+.box2Shop {
+    display: none;
+}
+
+.pAbout {
+    font-family: 'Playfair Display', serif;
+    color: #298125;
+    font-size: 2.5rem;
+}
+
+.pAboutSub {
+    font-family: "Proxima";
+    color: #298125;
+    font-size: 1.1rem;
+    width: 600px;
+    margin: 0 auto;
 }
