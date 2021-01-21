@@ -405,4 +405,235 @@ body, html {
     font-size: 1.1rem;
     width: 600px;
     margin: 0 auto;
+    text-align: justify;
+}
+
+.imgBgabout {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 120%;
+    left: -15%;
+    height: 90%;
+}
+
+.imgLeafabout1 {
+    position: absolute;
+    width: 28%;
+    bottom: 20%;
+    right: -5%;
+    z-index: 999;
+}
+
+.imgLeafabout2 {
+    position: absolute;
+    width: 28%;
+    bottom: 20%;
+    left: -5%;
+    z-index: 999;
+}
+
+.imgCoconutabout1 {
+    position: absolute;
+    width: 20%;
+    bottom: 20%;
+    right: 1%;
+    z-index: 9999;
+}
+
+.imgCoconutabout2 {
+    position: absolute;
+    width: 20%;
+    bottom: 20%;
+    left: 1%;
+    z-index: 9999;
+}
+
+.divCirclecart {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #298125;
+    margin-top: 10;
+}
+
+.divCirclecart img {
+    position: relative;
+    /* where the next element will be automatically positioned */
+    display: inline-block;
+    /* causes element width to shrink to fit content */
+    left: 50%;
+    top: 25%;
+    width: 25px;
+    /* moves left side of image/element to center of parent element */
+    transform: translate(-50%);
+}
+
+.divLine {
+    width: 2px;
+    height: 55px;
+    background-color: lightgray;
+    margin-left: 32px;
+}
+
+.pItem {
+    font-family: "Proxima";
+    font-weight: 600;
+    color: #185515;
+    margin-bottom: 0px;
+}
+
+.pPrice {
+    font-family: "Proxima";
+    color: #185515;
+    margin-bottom: 0px;
+    font-weight: 600;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.pItemsub {
+    font-family: "Proxima";
+    color: #185515;
+    margin-bottom: 0px;
+}
+
+.divCirclecartnumber {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightgray;
+    margin-top: 10;
+    margin-left: 10px;
+}
+
+.divCirclecartnumber p {
+    font-family: "Proxima";
+    color: gray;
+    font-size: 1.1rem;
+    position: relative;
+    /* where the next element will be automatically positioned */
+    display: inline-block;
+    /* causes element width to shrink to fit content */
+    left: 38%;
+    top: 25%;
+    /* moves left side of image/element to center of parent element */
+}
+
+.btnMinus {
+    font-family: "Proxima";
+    color: #185515;
+    font-size: 1.5rem;
+    border: 0px;
+    padding: 2px;
+    background-color: transparent;
+    margin: 0px 5px;
+}
+
+th {
+    font-family: "ProximaNovaBold";
+    font-size: 1.1rem;
+    text-align: center !important;
+    color: #185515;
+}
+
+tr {
+    padding-bottom: 25px !important;
+    border-bottom: 30px solid transparent;
+}
+
+.btnPlus {
+    font-family: "Proxima";
+    color: #185515;
+    font-size: 1.5rem;
+    border: 0px;
+    padding: 2px;
+    background-color: transparent;
+    margin: 0px 8px;
+}
+
+.pQuantity {
+    font-family: "Proxima";
+    color: #185515;
+    font-size: 1rem;
+    padding: 0px 22px;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+}
+
+.pTotal {
+    font-family: "Proxima";
+    color: #185515;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.hrTable {
+    width: 150px;
+    background-color: #185515;
+    margin-right: 0;
+}
+
+.pTotalprice {
+    font-family: "Proxima";
+    color: #185515;
+    font-weight: 600;
+    text-align: right !important;
+    width: 100%;
+    padding-right: 60px;
+}
+
+.pVoucher {
+    font-family: "Proxima";
+    color: #185515;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.txtVoucher {
+    font-family: "Proxima";
+    color: #298125;
+    font-size: 0.9rem;
+    width: 60%;
+    padding: 10px;
+    border: 0px;
+    box-shadow: 0 2px 12px -6px lightgray !important;
+    border-radius: 8px;
+}
+
+.p3 {
+    font-family: "Proxima";
+    color: #185515;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-right: 20px;
+    margin-top: 15px;
+    text-align: right;
+    width: 100%;
+}
+
+.pShippingfee {
+    font-family: "Proxima";
+    color: #185515;
+    text-align: right;
+}
+
+.btnProceed {
+    font-family: "ProximaNovaSemiBold";
+    margin-top: 20px;
+    color: white;
+    background-color: #298125;
+    padding: 8px;
+    width: 175px;
+    border: 0px;
+    float: right;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px -6px #298125 !important;
+    cursor: pointer;
+    outline: none !important;
+    transition: all 0.2s;
+    letter-spacing: 1px;
 }
