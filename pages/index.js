@@ -4,8 +4,12 @@ import Navbar from "../component/navbar";
 import Footer from "../component/footer";
 import Componentdidmount from "../component/componentdidmount";
 import Head from "next/head";
+import NextNprogress from "nextjs-progressbar";
 
 function index() {
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
   function goLearn() {
     $("html, body").animate(
       {
@@ -15,11 +19,41 @@ function index() {
     );
   }
 
+  function changeName(e) {
+      setName(e.currentTarget.value);
+  }
+
+  function changeEmail(e) {
+    setEmail(e.currentTarget.value);
+  }
+
+  function changeMessage(e) {
+    setMessage(e.currentTarget.value);
+  }
+
+  function sendMessage() {
+    if (!name) {
+      $(".txtname").css("border","1px solid red");
+    }
+    if (!email) {
+      $(".txtemail").css("border","1px solid red");
+    }
+    if (!message) {
+      $(".txtmessage").css("border","1px solid red");
+    }
+  }
+
   return (
     <>
       <Header></Header>
       <Navbar></Navbar>
       <Componentdidmount></Componentdidmount>
+      <NextNprogress
+        color="#298125"
+        startPosition={0.3}
+        stopDelayMs={200}
+        height="3"
+      />
       <div className="container-fluid h-100" style={{ position: "relative" }}>
         <img src="Image/conbg.png" className="imgCon"></img>
         <img src="Image/leaves.png" className="img-fluid imgLeave"></img>
@@ -217,12 +251,20 @@ function index() {
                 src="Image/rightleaf.png"
                 className="img-fluid imgCon3"
               ></img>
-              <input type="text" className="txtInfo" placeholder="name"></input>
-              <input type="text" className="txtInfo" placeholder="email"></input>
-              <textarea id="w3review" name="w3review" rows="6" cols="50" placeholder = "message">
-              
-              </textarea>
-              <button className="btnSubmit">SUBMIT</button>
+              <input type="text" className="txtInfo txtname" placeholder="name" value = {name} onChange = {changeName}></input>
+              <input
+                type="text"
+                className="txtInfo txtemail"
+                placeholder="email" value = {email} onChange = {changeEmail}
+              ></input>
+              <textarea
+                id="w3review"
+                name="w3review txtmessage"
+                rows="6"
+                cols="50"
+                placeholder="message" value = {message} onChange = {changeMessage}
+              ></textarea>
+              <button className="btnSubmit" onClick = {sendMessage}>SUBMIT</button>
             </div>
           </div>
         </div>

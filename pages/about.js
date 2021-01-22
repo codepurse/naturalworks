@@ -5,13 +5,19 @@ import Footer from "../component/footer";
 import Componentdidmount from "../component/componentdidmount";
 import Head from "next/head";
 import Router, { useRouter } from "next/router";
-
+import NextNprogress from "nextjs-progressbar";
 function about() {
   return (
     <>
       <Header></Header>
       <Navbar></Navbar>
       <Componentdidmount></Componentdidmount>
+       <NextNprogress
+        color="#298125"
+        startPosition={0.3}
+        stopDelayMs={200}
+        height="3"
+      />
       <div className="container-fluid h-100" style = {{position: "relative"}}>
         <img src = "Image/coconut.png" className = "img-fluid imgCoconutabout1"></img>
         <img src = "Image/coconut1.png" className = "img-fluid imgCoconutabout2"></img>

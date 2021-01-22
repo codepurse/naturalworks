@@ -83,7 +83,7 @@ function navbar() {
                   </a>
                 </li>
               </Link>
-              <Link href="/about">
+              <Link href="">
                 <li>
                   <a className="nav-link" style={{ color: "#298125" }}>
                     <img

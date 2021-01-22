@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(window).scroll(function () {
+  $("body html").scroll(function () {
     if ($(window).scrollTop() > $(window).height()) {
       alert("asdas");
     } else {
