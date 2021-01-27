@@ -82,7 +82,8 @@ body, html {
 }
 
 .imglogo {
-    z-index: 9;
+    z-index: 999999999;
+    position:relative;
 }
 
 .nav-link {

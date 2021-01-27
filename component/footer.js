@@ -24,7 +24,7 @@ function footer() {
                   <a>ABOUT</a>
                 </li>
                 <li>
-                  <a>PRODUCTS</a>
+                  <a>SHOP</a>
                 </li>
                 <li>
                   <a>CONTACT</a>

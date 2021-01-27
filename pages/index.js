@@ -4,6 +4,7 @@ import Navbar from "../component/navbar";
 import Footer from "../component/footer";
 import Componentdidmount from "../component/componentdidmount";
 import Head from "next/head";
+import Link from "next/link";
 import NextNprogress from "nextjs-progressbar";
 
 function index() {
@@ -20,7 +21,7 @@ function index() {
   }
 
   function changeName(e) {
-      setName(e.currentTarget.value);
+    setName(e.currentTarget.value);
   }
 
   function changeEmail(e) {
@@ -33,13 +34,19 @@ function index() {
 
   function sendMessage() {
     if (!name) {
-      $(".txtname").css("border","1px solid red");
+      $(".txtname").css("border", "1px solid red");
+    }else {
+      $(".txtname").css("border", "1px solid transparent");
     }
     if (!email) {
-      $(".txtemail").css("border","1px solid red");
+      $(".txtemail").css("border", "1px solid red");
+    }else {
+      $(".txtemail").css("border", "1px solid transparent");
     }
     if (!message) {
-      $(".txtmessage").css("border","1px solid red");
+      $(".txtmessage").css("border", "1px solid red");
+    }else {
+      $(".txtmessage").css("border", "1px solid transparent");
     }
   }
 
@@ -80,9 +87,9 @@ function index() {
                   style={{ width: "50px" }}
                 ></img>
               </div>
-              <button className="btnLearn" onClick={goLearn}>
-                LEARN MORE
-              </button>
+              <Link href="/about">
+                <button className="btnLearn">LEARN MORE</button>
+              </Link>
             </div>
             <div className="col-lg-6" style={{ position: "relative" }}>
               <img src="Image/box.png" className="img-fluid"></img>
@@ -214,7 +221,9 @@ function index() {
                 Medium Chain Triglycerides, Monolaurin and have the unique
                 ability to boost Ketones while providing Lactones.
               </p>
-              <button className="btnLearn">PRICING</button>
+              <Link href="/shop">
+                <button className="btnLearn">PRICING</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -251,20 +260,32 @@ function index() {
                 src="Image/rightleaf.png"
                 className="img-fluid imgCon3"
               ></img>
-              <input type="text" className="txtInfo txtname" placeholder="name" value = {name} onChange = {changeName}></input>
+              <input
+                type="text"
+                className="txtInfo txtname"
+                placeholder="name"
+                value={name}
+                onChange={changeName}
+              ></input>
               <input
                 type="text"
                 className="txtInfo txtemail"
-                placeholder="email" value = {email} onChange = {changeEmail}
+                placeholder="email"
+                value={email}
+                onChange={changeEmail}
               ></input>
               <textarea
                 id="w3review"
-                name="w3review txtmessage"
+                className="w3review txtmessage"
                 rows="6"
                 cols="50"
-                placeholder="message" value = {message} onChange = {changeMessage}
+                placeholder="message"
+                value={message}
+                onChange={changeMessage}
               ></textarea>
-              <button className="btnSubmit" onClick = {sendMessage}>SUBMIT</button>
+              <button className="btnSubmit" onClick={sendMessage}>
+                SUBMIT
+              </button>
             </div>
           </div>
         </div>
