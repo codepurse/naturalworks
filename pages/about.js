@@ -19,14 +19,13 @@ function about() {
         height="3"
       />
       <div className="container-fluid h-100" style = {{position: "relative"}}>
-        <img src = "Image/coconut.png" className = "img-fluid imgCoconutabout1"></img>
-        <img src = "Image/coconut1.png" className = "img-fluid imgCoconutabout2"></img>
-        <img src = "Image/leftleaf.png" className = "img-fluid imgLeafabout2"></img>
-        <img src = "Image/rightleaf.png" className = "img-fluid imgLeafabout1"></img>
-        <img src = "Image/conbg.png" className = "imgBgabout"></img>
+       
+      
+  
         <div className="container h-100">
           <div className="row align-items-center h-100">
-            <div className="col-lg-12 text-center">
+            <div className="col-lg-12 text-center" style = {{position: "relative"}}>
+            <img src = "Image/leftleaf.png" className = "img-fluid imgLeafabout2"></img>
               <p className="pAbout">MISSION</p>
               <p className="pAboutSub">
                 Our Virgin Coconut Oil supplements are easier to take than

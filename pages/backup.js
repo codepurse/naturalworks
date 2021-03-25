@@ -61,23 +61,9 @@ function index() {
         stopDelayMs={200}
         height="3"
       />
-      <div
-        className="container-fluid h-100 conMain"
-        style={{ position: "relative" }}
-      >
-        <div className="container conLine">
-          <div className="row">
-            <div className="col-lg-5">
-              <hr className="hr1" />
-            </div>
-            <div className="col"></div>
-            <div className="col-lg-5">
-              <hr className="hr2" />
-            </div>
-          </div>
-        </div>
-        <img src="Image/rightleaf.png" className="img-fluid imgLeave"></img>
-        <img src="Image/leftleaf.png" className="img-fluid imgLeaveleft"></img>
+      <div className="container-fluid h-100 conMain" style={{ position: "relative" }}>
+        <img src="Image/conbg.png" className="imgCon d-none"></img>
+        <img src="Image/leaves.png" className="img-fluid imgLeave"></img>
         <div className="container h-100">
           <div className="row h-100 align-items-center">
             <div className="col-lg-6">
@@ -89,41 +75,30 @@ function index() {
                 available in easy-to-take pills. Adapted to the modern lifestyle
                 for stronger bodies and healthy society.
               </p>
-
+            
               <Link href="/about">
-                <button className="btnLearn">SHOP NOW</button>
+                <button className="btnLearn">LEARN MORE</button>
               </Link>
             </div>
-            <div
-              className="col-lg-6 text-center"
-              style={{ position: "relative" }}
-            >
-              <div className="divRightimage">
-                <img
-                  src="Image/groupbox.png"
-                  className="img-fluid mx-auto d-flex"
-                ></img>
-                <img src="Image/icon1.png" className="img-fluid imgIcon1"></img>
-              </div>
-              <div className="form-inline mx-auto d-flex text-center">
-                <img
-                  src="Image/mercury.png"
-                  className="img-fluid imgMercury "
-                ></img>
-                <img
-                  src="Image/watsons.png"
-                  className="img-fluid imgMercury "
-                ></img>
-              </div>
+            <div className="col-lg-6" style={{ position: "relative" }}>
+              <img src="Image/box.png" className="img-fluid"></img>
+              <img
+                src="Image/Capsules.png"
+                className="img-fluid imgCapsule d-none"
+              ></img>
+              <img
+                src="Image/coconut.png"
+                className="img-fluid imgCoconut"
+              ></img>
             </div>
           </div>
         </div>
       </div>
       <div className="container-fluid con2">
-        <div className="container conWhy">
+        <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <p className="pCon2">Why take Virgin Coconut Oil</p>
+              <p className="pCon2">Why get Virgin Coconut Oil</p>
             </div>
           </div>
           <div className="row" style={{ marginTop: "40px" }}>
@@ -181,13 +156,9 @@ function index() {
           <div className="row" style={{ marginTop: "40px" }}>
             <div className="col">
               <img
-                src="Image/strength.svg"
-                className="mx-auto d-flex"
-                style={{ width: "60px" }}
+                src="Image/leftleaf.png"
+                className="img-fluid imgLeafleft"
               ></img>
-              <p className="pImage" style={{ marginTop: "30px" }}>
-                Improves eyesight
-              </p>
             </div>
             <div className="col">
               <img
@@ -220,23 +191,12 @@ function index() {
               </p>
             </div>
             <div className="col">
-              <img
-                src="Image/strength.svg"
-                className="mx-auto d-flex"
-                style={{ width: "60px" }}
-              ></img>
-              <p className="pImage" style={{ marginTop: "30px" }}>
-                Nourishes scalp health and reduces hair fall
-              </p>
+              <img src="Image/rightleaf.png" className="img-fluid"></img>
             </div>
           </div>
         </div>
       </div>
-      <div
-        className="container-fluid d-none"
-        id="con3"
-        style={{ marginTop: "100px" }}
-      >
+      <div className="container-fluid" id="con3" style={{ marginTop: "100px" }}>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -268,41 +228,21 @@ function index() {
                 src="Image/leftleaf.png"
                 className="img-fluid imgCon3left"
               ></img>
-              <p className="pCon4">Got any questions? Let us know!</p>
-              <div className="row">
-                <div className="col-lg-1 col-sm-3 col-3">
-                  <img src="Image/hotel.png"></img>
-                </div>
-                <div className="col-lg-11 col-sm-9 col-9">
-                  <p className="pInfo">
-                    909 Civic Prime, 2501 Civic Drive, Filinvest, Alabang,
-                    Muntinlupa City, Metro Manila, Philippines
-                  </p>
-                </div>
+              <p className="pCon4">Get in touch!</p>
+              <div className="form-inline">
+                <img src="Image/hotel.png"></img>
+                <p className="pInfo">915 40th Ave Bettendorf, IA 52722</p>
               </div>
-
-              <div className="row">
-                <div className="col-lg-1 col-sm-3 col-3">
-                  <img src="Image/telephone.png"></img>
-                </div>
-                <div className="col-lg-11 col-sm-9 col-9">
-                  <p className="pInfo">
-                    0917 874 0182<br></br>563-340-3661
-                  </p>
-                </div>
+              <div className="form-inline">
+                <img src="Image/telephone.png"></img>
+                <p className="pInfo">
+                  563-386-1999<br></br>563-340-3661
+                </p>
               </div>
-
-              <div className="row">
-                <div className="col-lg-1 col-sm-3 col-3">
+              <div className="form-inline">
                 <img src="Image/paper-plane.png"></img>
-                </div>
-                <div className="col-lg-11 col-sm-9 col-9">
-                <p className="pInfo">ryanking.green@yahoo.com</p>
-                </div>
+                <p className="pInfo">VCOsupplement@hotmail.com</p>
               </div>
-
-
-            
             </div>
             <div className="col-lg-6" style={{ position: "relative" }}>
               <img

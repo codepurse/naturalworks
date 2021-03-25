@@ -29,10 +29,6 @@ function navbar() {
                 className="img-fluid imglogo"
                 style={{ width: "54%", marginLeft: "50px" }}
               />
-              <img
-                src="Image/bglogonav.png"
-                className="img-fluid imgBglogo"
-              ></img>
             </a>
           </Link>
         </nav>

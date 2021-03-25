@@ -61,7 +61,7 @@ body, html {
 }
 
 .divFooter {
-   display: none;
+    display: none;
 }
 
 #__next {
@@ -70,7 +70,7 @@ body, html {
 }
 
 .conNav, .navbar {
-    background-color: #FAF9F6 !important;
+    background-color: #FFF9E3 !important;
 }
 
 .imgBglogo {
@@ -83,13 +83,14 @@ body, html {
 
 .imglogo {
     z-index: 999999999;
-    position:relative;
+    position: relative;
 }
 
 .nav-link {
     font-family: "ProximaNovaSemiBold";
     margin-left: 25px;
     cursor: pointer;
+    letter-spacing: 1.5px;
 }
 
 #activeNav {
@@ -104,8 +105,6 @@ body, html {
     padding: 15px 20px;
     position: relative;
 }
-
-
 
 .nav-link:after {
     background: none repeat scroll 0 0 transparent;
@@ -129,7 +128,7 @@ body, html {
     font-family: 'Playfair Display', serif;
     color: #298125;
     font-size: 3.5rem;
-    line-height: normal;
+    line-height: 1.7ch;
 }
 
 .p2 {
@@ -139,13 +138,46 @@ body, html {
     line-height: normal;
 }
 
+.conMain {
+    background-image: url('../Image/textu2re.png');
+    background-repeat: repeat;
+    position: relative;
+}
+
+.conLine {
+    position: absolute;
+    bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: none;
+}
+
+.hr1 {
+    background-color: #298125;
+    height: 2px;
+    width: 80%;
+    text-align: right;
+    margin-right: 0;
+}
+
+.hr2 {
+    background-color:  #298125;
+    height: 2px;
+    width: 80%;
+    text-align: left;
+    margin-left: 0;
+}
+
 .btnLearn {
     font-family: "ProximaNovaSemiBold";
     margin-top: 20px;
     color: white;
     background-color: #298125;
-    padding: 10px;
-    width: 250px;
+    padding: 10px 50px;
+    width: auto;
     border: 0px;
     border-radius: 25px;
     box-shadow: 0 2px 12px -6px #298125 !important;
@@ -153,6 +185,8 @@ body, html {
     transition: all 0.2s;
     letter-spacing: 1px;
     outline: none !important;
+    margin: 0 auto;
+    display: block;
 }
 
 .imgCon {
@@ -178,15 +212,47 @@ body, html {
     top: 85%;
 }
 
+.divRightimage {
+    position: relative;
+}
+
+.imgMercury {
+    width: 30%; 
+    margin-right: 15px;
+    
+}
+
+.imgIcon1 {
+    width: 50px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
 .imgLeave {
     position: absolute;
-    right: 0px;
+    right: -65px;
     width: 25%;
-    bottom: 0px;
+    bottom: -140px;
+}
+
+.imgLeaveleft {
+    position: absolute;
+    left: -65px;
+    width: 25%;
+    bottom: -140px;
 }
 
 .con2 {
     padding-top: 70px;
+    margin-top: 55px;
+}
+
+.conWhy {
+    border: 2px solid #185515;
+    border-radius: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .pCon2 {
@@ -223,9 +289,9 @@ body, html {
 }
 
 .pCon4 {
-    font-family: "ProximaNovaBold";
+    font-family: 'Playfair Display', serif;
     color: #298125;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .pInfo {
@@ -234,8 +300,6 @@ body, html {
     line-height: normal;
     font-size: 1.2rem;
     font-weight: 600;
-    margin-top: 10px;
-    margin-left: 15px;
 }
 
 .txtInfo {
@@ -302,7 +366,6 @@ body, html {
     bottom: 0px;
     width: 55%;
     right: -100px;
-
 }
 
 .conFooter {
@@ -413,7 +476,7 @@ body, html {
     font-family: "Proxima";
     color: #298125;
     font-size: 1.1rem;
-    width: 600px;
+    width: 100%;
     margin: 0 auto;
     text-align: justify;
 }
@@ -431,15 +494,15 @@ body, html {
     position: absolute;
     width: 28%;
     bottom: 20%;
-    right: -5%;
+    right: -40%;
     z-index: 999;
 }
 
 .imgLeafabout2 {
     position: absolute;
-    width: 28%;
-    bottom: 20%;
-    left: -5%;
+    width: 25%;
+    top: 0%;
+    left: -20%;
     z-index: 999;
 }
 
@@ -653,7 +716,7 @@ tr {
 }
 
 .rowCardDetails {
-   margin-top: 10px;
+    margin-top: 10px;
 }
 
 .btnProceed1 {
@@ -702,87 +765,96 @@ tr {
 }
 
 .cbx {
-  -webkit-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
 }
+
 .cbx span {
-  display: inline-block;
-  vertical-align: middle;
-  transform: translate3d(0, 0, 0);
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
 }
+
 .cbx span:first-child {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  transform: scale(1);
-  vertical-align: middle;
-  border: 1px solid #B9B8C3;
-  transition: all 0.2s ease;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transform: scale(1);
+    vertical-align: middle;
+    border: 1px solid #B9B8C3;
+    transition: all 0.2s ease;
 }
+
 .cbx span:first-child svg {
-  position: absolute;
-  z-index: 1;
-  top: 8px;
-  left: 6px;
-  fill: none;
-  stroke: white;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-dasharray: 16px;
-  stroke-dashoffset: 16px;
-  transition: all 0.3s ease;
-  transition-delay: 0.1s;
-  transform: translate3d(0, 0, 0);
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    left: 6px;
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
 }
+
 .cbx span:first-child:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: #506EEC;
-  display: block;
-  transform: scale(0);
-  opacity: 1;
-  border-radius: 50%;
-  transition-delay: 0.2s;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #506EEC;
+    display: block;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 50%;
+    transition-delay: 0.2s;
 }
+
 .cbx span:last-child {
-  margin-left: 8px;
+    margin-left: 8px;
 }
 
 .cbx:hover span:first-child {
-  border-color: #3c53c7;
+    border-color: #3c53c7;
 }
 
-.inp-cbx:checked + .cbx span:first-child {
-  border-color: #3c53c7;
-  background: #3c53c7;
-  animation: check 0.6s ease;
+.inp-cbx:checked+.cbx span:first-child {
+    border-color: #3c53c7;
+    background: #3c53c7;
+    animation: check 0.6s ease;
 }
-.inp-cbx:checked + .cbx span:first-child svg {
-  stroke-dashoffset: 0;
+
+.inp-cbx:checked+.cbx span:first-child svg {
+    stroke-dashoffset: 0;
 }
-.inp-cbx:checked + .cbx span:first-child:before {
-  transform: scale(2.2);
-  opacity: 0;
-  transition: all 0.6s ease;
+
+.inp-cbx:checked+.cbx span:first-child:before {
+    transform: scale(2.2);
+    opacity: 0;
+    transition: all 0.6s ease;
 }
-.inp-cbx:checked + .cbx span:last-child {
-  color: #B9B8C3;
-  transition: all 0.3s ease;
+
+.inp-cbx:checked+.cbx span:last-child {
+    color: #B9B8C3;
+    transition: all 0.3s ease;
 }
-.inp-cbx:checked + .cbx span:last-child:after {
-  transform: scaleX(1);
-  transition: all 0.3s ease;
+
+.inp-cbx:checked+.cbx span:last-child:after {
+    transform: scaleX(1);
+    transition: all 0.3s ease;
 }
 
 @keyframes check {
-  50% {
-    transform: scale(1.2);
-  }
+    50% {
+        transform: scale(1.2);
+    }
 }
 
 .chkBox {
