@@ -42,8 +42,7 @@ function shop() {
         stopDelayMs={200}
         height="3"
       />
-      <div className="container-fluid h-100" style={{ position: "relative" }}>
-        <img src="Image/conbg.png" className="imgCon"></img>
+      <div className="container-fluid h-100 conMain" style={{ position: "relative" }}>
         <div className="container h-100">
           <div className="row h-100 align-items-center">
             <div className="col-lg-6">
@@ -52,11 +51,6 @@ function shop() {
                   src="Image/icon1.png"
                   className="img-fluid"
                   style={{ width: "60px", marginRight: "20px" }}
-                ></img>
-                <img
-                  src="Image/icon2.png"
-                  className="img-fluid"
-                  style={{ width: "60px" }}
                 ></img>
               </div>
               <p className="p1" style={{ fontSize: "2.5rem" }}>
@@ -85,12 +79,7 @@ function shop() {
                   style={{ width: "20px", marginLeft: "8px" }}
                 ></img>
               </button>
-            </div>
-            <div className="col-lg-6">
-              <img src="Image/box.png" className="img-fluid box1Shop"></img>
-              <img src="Image/box3.png" className="img-fluid box2Shop"></img>
-              <div className="float-right">
-                <div className="form-inline" style={{ marginTop: "10px" }}>
+              <div className="form-inline" style={{ marginTop: "10px" }}>
                   <p className="pShop">Shop at</p>
                   <img
                     src="Image/shopee.png"
@@ -103,6 +92,12 @@ function shop() {
                     style={{ width: "40px" }}
                   ></img>
                 </div>
+            </div>
+            <div className="col-lg-6">
+              <img src="Image/box.png" className="img-fluid box1Shop"></img>
+              <img src="Image/box3.png" className="img-fluid box2Shop"></img>
+              <div className="float-right">
+               
               </div>
             </div>
           </div>

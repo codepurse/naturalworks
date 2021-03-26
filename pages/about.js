@@ -18,7 +18,7 @@ function about() {
         stopDelayMs={200}
         height="3"
       />
-      <div className="container-fluid h-100" style = {{position: "relative"}}>
+      <div className="container-fluid h-100 conMain" style = {{position: "relative"}}>
        
       
   
@@ -26,22 +26,18 @@ function about() {
           <div className="row align-items-center h-100">
             <div className="col-lg-12 text-center" style = {{position: "relative"}}>
             <img src = "Image/leftleaf.png" className = "img-fluid imgLeafabout2"></img>
+            <img src = "Image/cocoicon.png" className = "img-fluid imgLeafabout1"></img>
               <p className="pAbout">MISSION</p>
               <p className="pAboutSub">
-                Our Virgin Coconut Oil supplements are easier to take than
-                taking it by the spoon and they are a rich source of healthy
-                Medium Chain Triglycerides, Monolaurin and have the unique
-                ability to boost Ketones while providing Lactones.
+                Greenstrong Inc. (GSI) was founded in March 2018 to create and market responsible & effective products that cater to the health and personal care needs of consumers.
               </p>
+              <p className="pAboutSub">We believe in the power of nature. The Philippines is blessed with a great success and abudnance of greenery, wherein plants (whether as a whole or in parts - roots, bark, leaves, seeds & fruis, or their extracts) have superior ability to provide prophylactic and/or healing properties as a better alternative to synthetically produced products. Natural works, indeed.</p>
               <p className="pAbout" style = {{marginTop: "15px"}}>ABOUT US</p>
               <p className="pAboutSub">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              The health of consumers in our utmost priority. To promote appreciation of natural health alternatives by those with the modern lifestyle, we aim to delight and create usage convenience.
+              </p>
+              <p className="pAboutSub">
+               With Philippine Virgin Coconut Oil acknowledged as the best in the world, we aim to continue to produce world-class quality natural products at world-class quality standards. Through our added voice, we aim  to support the economic uplift of the Filipino local coconut farmers and promote to the world the amazing properties of Virgin Coconut Oil.
               </p>
             </div>
           </div>

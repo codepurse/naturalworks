@@ -139,7 +139,7 @@ body, html {
 }
 
 .conMain {
-    background-image: url('../Image/textu2re.png');
+    background-image: url('../Image/weave.png');
     background-repeat: repeat;
     position: relative;
 }
@@ -493,8 +493,8 @@ body, html {
 .imgLeafabout1 {
     position: absolute;
     width: 28%;
-    bottom: 20%;
-    right: -40%;
+    bottom: -40%;
+    right: -20%;
     z-index: 999;
 }
 
